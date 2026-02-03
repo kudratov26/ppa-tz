@@ -6,7 +6,7 @@
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript (Strict mode)
 - **Styling**: Tailwind CSS 4
-- **UI Components**: Shadcn UI + Radix UI
+- **UI Components**: Shadcn UI
 - **Icons**: Lucide React
 - **Persistence**: Cookies (для SSR без мерцания)
 
