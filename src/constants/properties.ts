@@ -7,7 +7,7 @@ export const PROPERTIES: Property[] = [
         images: [
             'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
             'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1512915922686-57c11f9ad6b3?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
         ],
         priceInTHB: 12500000,
         area: 250,
@@ -36,7 +36,7 @@ export const PROPERTIES: Property[] = [
         title: 'Современный кондоминиум у пляжа',
         images: [
             'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1512918766671-ed6a07be021f?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
             'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80',
         ],
         priceInTHB: 7800000,
@@ -51,8 +51,8 @@ export const PROPERTIES: Property[] = [
         title: 'Тропическое бунгало в саду',
         images: [
             'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
         ],
         priceInTHB: 3200000,
         area: 45,
@@ -66,7 +66,7 @@ export const PROPERTIES: Property[] = [
         title: 'Пентхаус с панорамным видом',
         images: [
             'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1512918766671-ed6a07be021f?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
             'https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=1200&q=80',
         ],
         priceInTHB: 18900000,
@@ -82,7 +82,7 @@ export const PROPERTIES: Property[] = [
         images: [
             'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
             'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80',
-            'https://images.unsplash.com/photo-1572120366361-e404b998cf93?auto=format&fit=crop&w=1200&q=80',
+            'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=1200&q=80',
         ],
         priceInTHB: 9500000,
         area: 180,

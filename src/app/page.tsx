@@ -8,7 +8,7 @@ export default async function Home() {
   const cookieStore = await cookies();
   const currency = (cookieStore.get(CURRENCY_COOKIE_NAME)?.value as Currency) || DEFAULT_CURRENCY;
 
-    return (
+  return (
     <main className="container mx-auto px-4 md:px-8 py-8 md:py-12 max-w-7xl">
       <div className="flex flex-col gap-2 mb-10">
         <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
