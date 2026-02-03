@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="container mx-auto px-4 md:px-8 py-8 md:py-12 max-w-7xl">
@@ -9,6 +11,7 @@ export default function Home() {
           Лучшие предложения в THB, USD, EUR и RUB
         </p>
       </div>
+
     </main>
   );
 }
