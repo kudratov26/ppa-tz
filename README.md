@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Real Estate Mini-App (Test Task)
 
-## Getting Started
+Мини-приложение для отображения объектов недвижимости с динамическим переключением валют и интерактивной галереей.
 
-First, run the development server:
+## Стек технологий
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript (Strict mode)
+- **Styling**: Tailwind CSS 4
+- **UI Components**: Shadcn UI + Radix UI
+- **Icons**: Lucide React
+- **Persistence**: Cookies (для SSR без мерцания)
 
+## Основные функции
+- **Список недвижимости**: 6 карточек с уникальными данными и 3+ изображениями для каждого объекта.
+- **Интерактивная галерея (Hover)**: При наведении курсора на разные сегменты карточки изображения переключаются автоматически.
+- **Детальное модальное окно**: При клике на объект открывается модальное окно с:
+    - Полноценной галереей (навигация стрелками + превью).
+    - Характеристиками (спальни, ванные, площадь, локация).
+    - Постоянным отображением цены в выбранной валюте.
+- **Переключатель валют**: Поддержка THB, USD, EUR, RUB. Выбор сохраняется между сессиями.
+
+## Курсы валют
+- THB: 1
+- USD: 0.0286
+- EUR: 0.0263
+- RUB: 2.57
+
+## Инструкция по запуску
+
+### 1. Установка зависимостей
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Запуск в режиме разработки
+```bash
+npm run dev
+```
+Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Сборка для продакшена
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Структура проекта
+- `src/app`: Страницы и роутинг (App Router).
+- `src/components`: UI компоненты (Header, PropertyCard, PropertyModal и др.).
+- `src/constants`: Статические данные (курсы валют, список недвижимости).
+- `src/lib`: Утилиты и Server Actions для работы с валютой.
+- `src/types`: TypeScript определения.
