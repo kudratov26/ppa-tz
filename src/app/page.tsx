@@ -1,9 +1,13 @@
 import { PropertyCard } from "@/components/PropertyCard";
+import { CURRENCY_COOKIE_NAME, DEFAULT_CURRENCY } from "@/constants/currencies";
 import { PROPERTIES } from "@/constants/properties";
-import Image from "next/image";
+import { Currency } from "@/types/types";
+import { cookies } from "next/headers";
 
-export default function Home() {
-    const currency = "THB";
+export default async function Home() {
+  const cookieStore = await cookies();
+  const currency = (cookieStore.get(CURRENCY_COOKIE_NAME)?.value as Currency) || DEFAULT_CURRENCY;
+
     return (
     <main className="container mx-auto px-4 md:px-8 py-8 md:py-12 max-w-7xl">
       <div className="flex flex-col gap-2 mb-10">
