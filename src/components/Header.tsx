@@ -1,5 +1,6 @@
 import { Currency } from '@/types/types';
 import { Home } from 'lucide-react';
+import { CurrencyPicker } from './CurrencyPicker';
 
 interface HeaderProps {
     currency: Currency;
@@ -19,12 +20,7 @@ export function Header({ currency }: HeaderProps) {
                     <span className="hidden md:inline text-sm text-muted-foreground">
                         Выберите валюту:
                     </span>
-                    <select>
-                        <option value="THB">THB</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="RUB">RUB</option>
-                    </select>
+                    <CurrencyPicker currentCurrency={currency} />
                 </div>
             </div>
         </header>
